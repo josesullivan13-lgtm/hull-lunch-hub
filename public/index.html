@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hull Lunch Hub | Staff Dining Pre-Order</title>
+  <!-- Fonts are self-hosted (public/fonts) so the app makes no third-party requests. -->
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/fonts/fonts.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand-row">
+        <div class="brand-logo-plate">
+          <img src="/assets/apetito-wff-logo.png" alt="apetito and Wiltshire Farm Foods" />
+        </div>
+      </div>
+
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Staff Dining Pre-Order</span>
+          <h1>Hull Lunch Hub</h1>
+          <p class="header-copy">Delicious, nutritious meals provided by apetito.</p>
+        </div>
+
+        <div class="hero-card">
+          <img src="/assets/brand-food-hero.png" alt="Prepared hot food" />
+          <div class="hero-card-copy">
+            <strong>Today’s lunch, ordered around the shift.</strong>
+            <span>Choose your meal, select a collection time and let the kitchen team see orders live.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="tabs" hidden>
+      <button class="tab-btn active" data-tab="orderTab">Customer order</button>
+      <button class="tab-btn" data-tab="kitchenTab">Kitchen dashboard</button>
+    </div>
+
+    <section id="orderTab" class="app-view active">
+      <div class="customer-flow">
+        <div class="card menu-card">
+          <div id="customerNotice" class="notice">Loading today’s menu and pickup slots...</div>
+          <div class="section-heading">
+            <div>
+              <h2>Build today’s lunch</h2>
+              <p>Choose Build Your Own or Hot2Go, then add a drink if wanted.</p>
+            </div>
+            <span class="step-pill">Step 1 of 2</span>
+          </div>
+          <div id="menuContainer"></div>
+        </div>
+
+        <div class="card order-composer" id="orderComposer">
+          <div class="section-heading compact">
+            <div>
+              <h2>Complete your pre-order</h2>
+              <p>Enter your name and ward / department, then select a collection time.</p>
+            </div>
+            <span class="step-pill">Step 2 of 2</span>
+          </div>
+
+          <div class="selected-strip">
+            <div>
+              <span>Selected lunch</span>
+              <strong id="selectedDishText">Not selected yet</strong>
+            </div>
+            <div>
+              <span>Pickup time</span>
+              <strong id="selectedSlotText">Not selected yet</strong>
+            </div>
+            <div>
+              <span>Order total</span>
+              <strong id="totalText">£0</strong>
+            </div>
+          </div>
+
+          <div class="checkout-grid">
+            <div class="form-row">
+              <label for="customerName">Name</label>
+              <input id="customerName" placeholder="Required, e.g. Sarah" autocomplete="name" />
+            </div>
+            <div class="form-row">
+              <label for="department">Ward / department</label>
+              <input id="department" placeholder="Required, e.g. Ward 7, Admin, Estates" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label>Pickup time</label>
+            <div id="slotGrid" class="slot-grid"></div>
+          </div>
+
+          <button id="placeOrderBtn" class="primary-btn" disabled>Place pre-order</button>
+          <div id="confirmationBox" class="confirmation-area"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kitchenTab" class="app-view">
+      <!-- LOGIN GATE: shown until the kitchen password is accepted -->
+      <div class="card kitchen-login" id="kitchenLogin">
+        <div class="section-heading compact">
+          <div>
+            <h2>Kitchen sign in</h2>
+            <p>Enter the kitchen password to see today’s orders.</p>
+          </div>
+        </div>
+        <div class="login-row">
+          <div class="form-row" style="margin:0">
+            <label for="adminKey">Kitchen password</label>
+            <input id="adminKey" type="password" placeholder="Enter password" autocomplete="current-password" />
+          </div>
+          <button id="kitchenSignInBtn" class="primary-btn">Sign in</button>
+        </div>
+        <div id="loginNotice" class="notice">Ask your manager for the kitchen password if you don’t have it.</div>
+      </div>
+
+      <!-- KITCHEN APP: shown only after sign in -->
+      <div class="kitchen-app" id="kitchenApp" hidden>
+        <div class="card">
+          <div class="kitchen-topbar">
+            <div class="kitchen-subtabs" id="kitchenSubtabs" aria-label="Kitchen sections">
+              <button class="kitchen-subtab active" type="button" data-kitchen-view="ordersView">Orders</button>
+              <button class="kitchen-subtab" type="button" data-kitchen-view="menuView">Menu setup</button>
+              <button class="kitchen-subtab" type="button" data-kitchen-view="weeklyView">Weekly menus</button>
+            </div>
+            <button id="kitchenSignOutBtn" class="text-btn" type="button">Sign out</button>
+          </div>
+
+          <!-- ORDERS SUB-VIEW -->
+          <div id="ordersView" class="kitchen-view active">
+            <div class="summary-grid" id="summaryGrid"></div>
+
+            <div class="orders-toolbar">
+              <div class="orders-status" id="ordersStatusLine">Loading today’s orders…</div>
+              <div class="orders-actions">
+                <label class="autorefresh-toggle">
+                  <input type="checkbox" id="autoRefreshToggle" checked />
+                  <span>Auto-refresh</span>
+                </label>
+                <button id="refreshOrdersBtn" class="secondary-btn" type="button">Refresh now</button>
+                <button id="exportCsvBtn" class="secondary-btn" type="button">Export CSV</button>
+                <button id="clearOrdersBtn" class="danger-btn" type="button">Clear orders</button>
+              </div>
+            </div>
+
+            <div id="kitchenNotice" class="notice" hidden></div>
+            <div id="ordersList" class="orders-list"></div>
+          </div>
+
+          <!-- MENU SETUP SUB-VIEW -->
+          <div id="menuView" class="kitchen-view">
+            <div class="menu-editor">
+              <div class="section-heading compact">
+                <div>
+                  <h3>Today’s menu setup</h3>
+                  <p>Set the Build Your Own options and Hot2Go dishes for today. Blank fields will not appear on the customer app.</p>
+                </div>
+              </div>
+              <div class="menu-editor-actions">
+                <button id="loadMenuSetupBtn" class="secondary-btn">Load menu setup</button>
+                <button id="saveMenuSetupBtn" class="primary-btn menu-save-btn">Save today’s menu</button>
+              </div>
+              <div id="menuSetupNotice" class="notice">Load today’s menu to edit it, then save your changes.</div>
+              <div id="menuSetupForm" class="menu-setup-form"></div>
+            </div>
+          </div>
+
+          <!-- WEEKLY MENUS SUB-VIEW (v18): one saved menu per weekday; "Make live" copies it to today's menu -->
+          <div id="weeklyView" class="kitchen-view">
+            <div class="menu-editor weekly-editor">
+              <div class="section-heading compact">
+                <div>
+                  <h3>Weekly menus</h3>
+                  <p>Save a menu for each weekday once. Each morning, pick the day and tap “Make live today” — that menu becomes what customers see.</p>
+                </div>
+              </div>
+              <div id="weeklyLiveStatus" class="weekly-live-status">Loading…</div>
+              <div id="weekdayPicker" class="weekday-picker" aria-label="Choose a weekday"></div>
+              <div class="menu-editor-actions weekly-actions">
+                <button id="activateWeeklyBtn" class="primary-btn menu-save-btn" type="button">Make live today</button>
+                <button id="saveWeeklyBtn" class="secondary-btn" type="button">Save changes</button>
+                <button id="copyLiveToWeeklyBtn" class="text-btn" type="button">Copy from today’s live menu</button>
+              </div>
+              <div id="weeklyNotice" class="notice">Pick a weekday to view or edit its saved menu.</div>
+              <div id="weeklyForm" class="menu-setup-form"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <img src="/assets/apetito-wff-logo.png" alt="apetito and Wiltshire Farm Foods" />
+      <span>Staff dining by apetito</span>
+    </div>
+  </footer>
+
+  <script src="/app.js"></script>
+</body>
+</html>

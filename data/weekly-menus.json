@@ -1,0 +1,815 @@
+{
+  "live": {
+    "day": "thu",
+    "appliedAt": "2026-10-15T13:42:32.525Z",
+    "appliedDate": "2026-10-15",
+    "editedSince": false
+  },
+  "days": {
+    "mon": {
+      "buildYourOwn": {
+        "price": 6,
+        "bases": [
+          {
+            "name": "Jacket Potato",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Potato Wedges",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "toppings": [
+          {
+            "name": "Baked Beans",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Bean Chilli",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Tuna Mayo",
+            "diet": [
+              "GF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "garnishes": [
+          {
+            "name": "Cheddar Cheese",
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Chilies",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ]
+      },
+      "hot2go": {
+        "dishes": [
+          {
+            "name": "Vegetarian Tikka Masala with White Rice",
+            "price": 5,
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Vegan Thai Red Curry with White Rice",
+            "price": 5,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Orange & Ginger Chicken with White Rice",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "Carrot & Coriander Soup",
+            "price": 3,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          }
+        ]
+      }
+    },
+    "tue": {
+      "buildYourOwn": {
+        "price": 6,
+        "bases": [
+          {
+            "name": "Jacket Potato",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Potato Wedges",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "toppings": [
+          {
+            "name": "Baked Beans",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Bean Chilli",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Tuna Mayo",
+            "diet": [
+              "GF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "garnishes": [
+          {
+            "name": "Cheddar Cheese",
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Chilies",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ]
+      },
+      "hot2go": {
+        "dishes": [
+          {
+            "name": "Vegetarian Tikka Masala with White Rice",
+            "price": 5,
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Vegan Thai Red Curry with White Rice",
+            "price": 5,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Orange & Ginger Chicken with White Rice",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "Carrot & Coriander Soup",
+            "price": 3,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          }
+        ]
+      }
+    },
+    "wed": {
+      "buildYourOwn": {
+        "price": 6,
+        "bases": [
+          {
+            "name": "Jacket Potato",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Potato Wedges",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "toppings": [
+          {
+            "name": "Baked Beans",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Bean Chilli",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Tuna Mayo",
+            "diet": [
+              "GF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "garnishes": [
+          {
+            "name": "Cheddar Cheese",
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Chilies",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ]
+      },
+      "hot2go": {
+        "dishes": [
+          {
+            "name": "Vegetarian Tikka Masala with White Rice",
+            "price": 5,
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Vegan Thai Red Curry with White Rice",
+            "price": 5,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Orange & Ginger Chicken with White Rice",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "Carrot & Coriander Soup",
+            "price": 3,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          }
+        ]
+      }
+    },
+    "thu": {
+      "buildYourOwn": {
+        "price": 6,
+        "bases": [
+          {
+            "name": "Jacket Potato",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Potato Wedges",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "toppings": [
+          {
+            "name": "Baked Beans",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Bean Chilli",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Tuna Mayo",
+            "diet": [
+              "GF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "garnishes": [
+          {
+            "name": "Cheddar Cheese",
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Chilies",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ]
+      },
+      "hot2go": {
+        "dishes": [
+          {
+            "name": "Vegetarian Tikka Masala with White Rice",
+            "price": 5,
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Vegan Thai Red Curry with White Rice",
+            "price": 5,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Orange & Ginger Chicken with White Rice",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "Carrot & Coriander Soup",
+            "price": 3,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          }
+        ]
+      }
+    },
+    "fri": {
+      "buildYourOwn": {
+        "price": 6,
+        "bases": [
+          {
+            "name": "Jacket Potato",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Potato Wedges",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "toppings": [
+          {
+            "name": "Baked Beans",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Bean Chilli",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Tuna Mayo",
+            "diet": [
+              "GF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ],
+        "garnishes": [
+          {
+            "name": "Cheddar Cheese",
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Chilies",
+            "diet": [
+              "V",
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          },
+          {
+            "name": "",
+            "diet": []
+          }
+        ]
+      },
+      "hot2go": {
+        "dishes": [
+          {
+            "name": "Vegetarian Tikka Masala with White Rice",
+            "price": 5,
+            "diet": [
+              "V",
+              "GF"
+            ]
+          },
+          {
+            "name": "Vegan Thai Red Curry with White Rice",
+            "price": 5,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "Orange & Ginger Chicken with White Rice",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "Carrot & Coriander Soup",
+            "price": 3,
+            "diet": [
+              "VG",
+              "GF",
+              "DF"
+            ]
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          },
+          {
+            "name": "",
+            "price": 5,
+            "diet": []
+          }
+        ]
+      }
+    }
+  }
+}

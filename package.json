@@ -1,0 +1,14 @@
+{
+  "name": "hull-lunch-hub-v17-byo-ingredient-diet-port-5009",
+  "version": "17.0.1",
+  "description": "Hull Lunch Hub staff dining pre-order app, no npm dependencies. v17 per-ingredient dietary tags for Build Your Own (with safe intersection logic), port 5009. Run directly with Node.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}
